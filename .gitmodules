@@ -1,0 +1,13 @@
+[submodule "Nebulon/vendor/glfw"]
+	path = Nebulon/vendor/glfw
+	url = https://github.com/glfw/glfw
+	ignore = all
+[submodule "Nebulon/vendor/imgui"]
+	path = Nebulon/vendor/imgui
+	url = https://github.com/ocornut/imgui
+	branch = docking
+	ignore = all
+[submodule "Nebulon/vendor/glm"]
+	path = Nebulon/vendor/glm
+	url = https://github.com/g-truc/glm
+	ignore = all
