@@ -2,7 +2,7 @@ project "Nebulon"
 	kind "StaticLib"
 	language "C++"
 	cppdialect "C++17"
-	staticruntime "on"
+	staticruntime "off"
 
 	targetdir ("%{wks.location}/bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("%{wks.location}/bin-int/" .. outputdir .. "/%{prj.name}")
@@ -49,6 +49,7 @@ project "Nebulon"
 		defines
 		{
 			"NBL_PLATFORM_WINDOWS",
+			"NBL_BUILD_DLL",
 			"GLFW_INCLUDE_NONE"
 		}
 
