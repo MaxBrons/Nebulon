@@ -1,5 +1,4 @@
 #pragma once
-
 #include <memory>
 
 #ifdef NBL_DEBUG
@@ -8,6 +7,7 @@
 	#else
 		#error "Platform doesn't support debugbreak yet."
 	#endif
+#define NBL_CORE_ASSERT(x, ...) if(!(x)) { NBL_CORE_ERROR(__VA_ARGS__); NBL_DEBUGBREAK(); }
 #else
 	#define NBL_DEBUGBREAK()
 #endif
